@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container"> 
+     <div class="row">
+        <div class="col-6 mx-auto">
+
+            <div class="text-center mt-5">
+                <img src="{% static 'img/coffee cup.jpeg' %}"class="img-fluid img-responsive" style="height: 200;" alt="">
+            </div>
+            <form method="post" action="">
+                {% csrf_token %}
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Enter Name</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Enter Amount</label>
+                  <input type="number" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Submit</button>
+              </form>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

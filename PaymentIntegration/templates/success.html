@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 mx-auto">
+            <div class="text-center mt-5 pt-5">
+                <img src="{% static 'img/success.png' %}" class="img-fluid img-responsive" style="height: 200px;" alt="">
+                <h5 class="mt-4">Thank you your payment has been received</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
