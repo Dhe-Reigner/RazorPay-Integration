@@ -29,6 +29,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+RECAPTCHA_PUBLIC_KEY ='key'
+RECAPTCHA_PRIVATE_KEY ='secret' 
+NOCAPTCHA = True   
 # Application definition
 
 INSTALLED_APPS = [
