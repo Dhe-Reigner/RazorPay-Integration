@@ -1,5 +1,5 @@
 """
-ASGI config for RAZORPAY project.
+ASGI config for DARAJA project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'RAZORPAY.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'DARAJA.settings')
 
 application = get_asgi_application()
